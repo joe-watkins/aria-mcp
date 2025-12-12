@@ -1,0 +1,92 @@
+name: Update ARIA Data
+
+on:
+  # Run weekly on Sunday at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * 0'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-aria-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update ARIA submodule to latest
+        run: |
+          git submodule update --remote data/aria
+          echo "Submodule updated to: $(cd data/aria && git rev-parse --short HEAD)"
+
+      - name: Parse ARIA specification
+        run: npm run parse
+
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet data/aria-data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in aria-data.json"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in aria-data.json"
+          fi
+
+      - name: Get ARIA commit info
+        id: aria-info
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+          cd data/aria
+          COMMIT_SHA=$(git rev-parse --short HEAD)
+          COMMIT_DATE=$(git log -1 --format=%cd --date=short)
+          COMMIT_MSG=$(git log -1 --format=%s | head -c 50)
+          echo "sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
+          echo "date=$COMMIT_DATE" >> $GITHUB_OUTPUT
+          echo "msg=$COMMIT_MSG" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/aria data/aria-data.json
+          git commit -m "chore: update ARIA data from upstream
+
+          ARIA commit: ${{ steps.aria-info.outputs.sha }} (${{ steps.aria-info.outputs.date }})
+          ${{ steps.aria-info.outputs.msg }}"
+          git push
+
+      - name: Create summary
+        run: |
+          echo "## ARIA Data Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check-changes.outputs.changed }}" == "true" ]; then
+            echo "✅ **Changes detected and committed**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- ARIA commit: \`${{ steps.aria-info.outputs.sha }}\`" >> $GITHUB_STEP_SUMMARY
+            echo "- Date: ${{ steps.aria-info.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ **No changes detected**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The ARIA specification data is already up to date." >> $GITHUB_STEP_SUMMARY
+          fi
+

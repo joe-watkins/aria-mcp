@@ -1,0 +1,166 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate ARIA data exists
+        run: |
+          if [ ! -f data/aria-data.json ]; then
+            echo "aria-data.json not found, regenerating..."
+            npm run parse
+          fi
+
+      - name: Verify tools load correctly
+        run: |
+          node -e "
+            import('./src/tools.js').then(m => {
+              const count = m.tools.length;
+              console.log('✅ Loaded ' + count + ' tools successfully');
+              if (count < 10) {
+                console.error('❌ Expected at least 10 tools, got ' + count);
+                process.exit(1);
+              }
+            }).catch(e => {
+              console.error('❌ Failed to load tools:', e);
+              process.exit(1);
+            });
+          "
+
+      - name: Test tool execution
+        run: |
+          node -e "
+            import('./src/tools.js').then(async (m) => {
+              const tools = m.tools;
+              let passed = 0;
+              let failed = 0;
+              
+              // Test get-role
+              try {
+                const roleTool = tools.find(t => t.name === 'get-role');
+                const result = await roleTool.handler({ role: 'button' });
+                if (result.content[0].text.includes('button')) {
+                  console.log('✅ get-role: passed');
+                  passed++;
+                } else {
+                  throw new Error('Unexpected response');
+                }
+              } catch (e) {
+                console.error('❌ get-role: failed -', e.message);
+                failed++;
+              }
+              
+              // Test list-roles
+              try {
+                const listTool = tools.find(t => t.name === 'list-roles');
+                const result = await listTool.handler({});
+                if (result.content[0].text.includes('ARIA Roles')) {
+                  console.log('✅ list-roles: passed');
+                  passed++;
+                } else {
+                  throw new Error('Unexpected response');
+                }
+              } catch (e) {
+                console.error('❌ list-roles: failed -', e.message);
+                failed++;
+              }
+              
+              // Test validate-role-attributes
+              try {
+                const validateTool = tools.find(t => t.name === 'validate-role-attributes');
+                const result = await validateTool.handler({ role: 'button', attributes: ['aria-pressed'] });
+                if (result.content[0].text.includes('aria-pressed')) {
+                  console.log('✅ validate-role-attributes: passed');
+                  passed++;
+                } else {
+                  throw new Error('Unexpected response');
+                }
+              } catch (e) {
+                console.error('❌ validate-role-attributes: failed -', e.message);
+                failed++;
+              }
+              
+              // Test get-aria-version
+              try {
+                const versionTool = tools.find(t => t.name === 'get-aria-version');
+                const result = await versionTool.handler({});
+                if (result.content[0].text.includes('WAI-ARIA')) {
+                  console.log('✅ get-aria-version: passed');
+                  passed++;
+                } else {
+                  throw new Error('Unexpected response');
+                }
+              } catch (e) {
+                console.error('❌ get-aria-version: failed -', e.message);
+                failed++;
+              }
+              
+              console.log('');
+              console.log('Results: ' + passed + ' passed, ' + failed + ' failed');
+              
+              if (failed > 0) {
+                process.exit(1);
+              }
+            }).catch(e => {
+              console.error('❌ Test suite failed:', e);
+              process.exit(1);
+            });
+          "
+
+      - name: Verify JSON data structure
+        run: |
+          node -e "
+            import data from './data/aria-data.json' with { type: 'json' };
+            
+            const checks = [
+              ['metadata.version', data.metadata?.version],
+              ['roles', Object.keys(data.roles || {}).length],
+              ['states', Object.keys(data.states || {}).length],
+              ['properties', Object.keys(data.properties || {}).length],
+              ['roleCategories', Object.keys(data.roleCategories || {}).length],
+            ];
+            
+            let allPassed = true;
+            
+            checks.forEach(([name, value]) => {
+              if (value) {
+                console.log('✅ ' + name + ': ' + value);
+              } else {
+                console.error('❌ ' + name + ': missing or empty');
+                allPassed = false;
+              }
+            });
+            
+            // Validate minimum expected counts
+            const roleCount = Object.keys(data.roles || {}).length;
+            if (roleCount < 50) {
+              console.error('❌ Expected at least 50 roles, got ' + roleCount);
+              allPassed = false;
+            }
+            
+            if (!allPassed) {
+              process.exit(1);
+            }
+          "
+
