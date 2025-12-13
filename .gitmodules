@@ -1,3 +1,4 @@
 [submodule "data/aria"]
 	path = data/aria
 	url = https://github.com/w3c/aria.git
+	ignore = dirty
