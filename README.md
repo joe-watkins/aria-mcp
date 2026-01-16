@@ -2,6 +2,23 @@
 
 A Model Context Protocol (MCP) server providing comprehensive access to the W3C WAI-ARIA specification. Designed for accessibility professionals, developers, and AI agents to query ARIA roles, states, properties, and accessibility requirements.
 
+## Quick Start
+
+Add to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "aria": {
+      "command": "npx",
+      "args": ["-y", "aria-mcp"]
+    }
+  }
+}
+```
+
+That's it! No cloning, no building - just add the config and start querying ARIA.
+
 ## Features
 
 - **Complete ARIA 1.3 Specification Data**: Roles, states, properties, and their relationships

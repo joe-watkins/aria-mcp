@@ -1,17 +1,44 @@
 {
   "name": "aria-mcp",
   "version": "1.0.0",
+  "mcpName": "io.github.joe-watkins/aria",
   "description": "ARIA specification MCP server for accessibility professionals and AI agents",
   "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "aria-mcp": "src/index.js"
+  },
+  "files": [
+    "src/",
+    "data/aria-data.json",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "accessibility",
+    "a11y",
+    "aria",
+    "wai-aria",
+    "w3c"
+  ],
+  "author": "Joe Watkins",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe-watkins/aria-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joe-watkins/aria-mcp/issues"
+  },
+  "homepage": "https://github.com/joe-watkins/aria-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "cheerio": "^1.1.2",
     "linkedom": "^0.18.12"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "node src/index.js",
