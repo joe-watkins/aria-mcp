@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3",
-    "generatedAt": "2026-04-05T00:33:52.611Z",
+    "generatedAt": "2026-04-12T00:35:42.723Z",
     "sourceUrl": "https://github.com/w3c/aria",
     "specUrl": "https://w3c.github.io/aria/"
   },
@@ -22188,10 +22188,13 @@
       "requiredStates": [],
       "supportedStates": [],
       "inheritedStates": [],
-      "prohibitedStates": [],
+      "prohibitedStates": [
+        "aria-braillelabel",
+        "aria-label",
+        "aria-labelledby"
+      ],
       "nameFrom": [
-        "contents",
-        "author"
+        "prohibited"
       ],
       "accessibleNameRequired": false,
       "childrenPresentational": false,
@@ -22199,18 +22202,54 @@
       "parentRoles": [
         "section"
       ],
-      "localProps": [],
-      "allProps": [
+      "localProps": [
         {
           "is": "property",
-          "name": "aria-atomic",
+          "name": "aria-braillelabel",
           "required": false,
-          "disallowed": false,
+          "disallowed": true,
           "deprecated": false
         },
         {
           "is": "property",
+          "name": "aria-label",
+          "required": false,
+          "disallowed": true,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-labelledby",
+          "required": false,
+          "disallowed": true,
+          "deprecated": false
+        }
+      ],
+      "allProps": [
+        {
+          "is": "property",
           "name": "aria-braillelabel",
+          "required": false,
+          "disallowed": true,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-label",
+          "required": false,
+          "disallowed": true,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-labelledby",
+          "required": false,
+          "disallowed": true,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-atomic",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -22323,20 +22362,6 @@
         {
           "is": "property",
           "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
           "required": false,
           "disallowed": false,
           "deprecated": false
