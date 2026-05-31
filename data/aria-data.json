@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3",
-    "generatedAt": "2026-05-24T00:49:08.677Z",
+    "generatedAt": "2026-05-31T00:52:37.650Z",
     "sourceUrl": "https://github.com/w3c/aria",
     "specUrl": "https://w3c.github.io/aria/"
   },
@@ -380,6 +380,13 @@
         },
         {
           "is": "property",
+          "name": "aria-modal",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-owns",
           "required": false,
           "disallowed": false,
@@ -395,13 +402,6 @@
         {
           "is": "property",
           "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-modal",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -2185,13 +2185,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -2270,13 +2263,6 @@
         },
         {
           "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
           "name": "aria-flowto",
           "required": false,
           "disallowed": false,
@@ -2302,13 +2288,6 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
         },
         {
           "is": "property",
@@ -2637,48 +2616,6 @@
         },
         {
           "is": "property",
-          "name": "aria-colindex",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-colindextext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-colspan",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowindex",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowindextext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowspan",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -2701,6 +2638,27 @@
         {
           "is": "state",
           "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colindex",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colindextext",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colspan",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -2760,6 +2718,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": true
+        },
+        {
+          "is": "state",
+          "name": "aria-expanded",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
         },
         {
           "is": "property",
@@ -2833,7 +2798,21 @@
         },
         {
           "is": "property",
+          "name": "aria-readonly",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-required",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -2846,22 +2825,22 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-expanded",
+          "is": "property",
+          "name": "aria-rowindex",
           "required": false,
           "disallowed": false,
           "deprecated": false
         },
         {
           "is": "property",
-          "name": "aria-readonly",
+          "name": "aria-rowindextext",
           "required": false,
           "disallowed": false,
           "deprecated": false
         },
         {
           "is": "property",
-          "name": "aria-required",
+          "name": "aria-rowspan",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -3043,13 +3022,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -3104,6 +3076,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -3944,13 +3923,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -4727,13 +4699,6 @@
       "allProps": [
         {
           "is": "property",
-          "name": "aria-modal",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -4875,6 +4840,13 @@
         {
           "is": "property",
           "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-modal",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -6425,13 +6397,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -6455,146 +6420,6 @@
         {
           "is": "state",
           "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -6608,41 +6433,6 @@
         },
         {
           "is": "property",
-          "name": "aria-rowcount",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-controls",
           "required": false,
           "disallowed": false,
@@ -6777,6 +6567,13 @@
         {
           "is": "property",
           "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-rowcount",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -6937,6 +6734,34 @@
         },
         {
           "is": "property",
+          "name": "aria-atomic",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-braillelabel",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-brailleroledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-colindex",
           "required": false,
           "disallowed": false,
@@ -6958,6 +6783,118 @@
         },
         {
           "is": "property",
+          "name": "aria-controls",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-current",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-describedby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-description",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-details",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-dropeffect",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-flowto",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-grabbed",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-hidden",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-keyshortcuts",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-label",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-labelledby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-owns",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-relevant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-rowindex",
           "required": false,
           "disallowed": false,
@@ -6973,342 +6910,6 @@
         {
           "is": "property",
           "name": "aria-rowspan",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -7438,13 +7039,6 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
         },
         {
           "is": "property",
@@ -8093,13 +7687,6 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
         },
         {
           "is": "property",
@@ -9160,21 +8747,7 @@
         },
         {
           "is": "property",
-          "name": "aria-orientation",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -9243,6 +8816,13 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -9301,6 +8881,13 @@
         {
           "is": "property",
           "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-orientation",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -10601,350 +10188,161 @@
       "allProps": [
         {
           "is": "property",
+          "name": "aria-activedescendant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-atomic",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-braillelabel",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-brailleroledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-controls",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-current",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-describedby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-description",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-details",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "property",
+          "name": "aria-dropeffect",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-errormessage",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "property",
+          "name": "aria-flowto",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-grabbed",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-haspopup",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "state",
+          "name": "aria-hidden",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-invalid",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "property",
+          "name": "aria-keyshortcuts",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-label",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-labelledby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-orientation",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -11001,21 +10399,7 @@
       "allProps": [
         {
           "is": "property",
-          "name": "aria-orientation",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -11082,6 +10466,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -11156,6 +10547,13 @@
         {
           "is": "property",
           "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-orientation",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -11352,13 +10750,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -11385,13 +10776,6 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
         },
         {
           "is": "state",
@@ -11504,41 +10888,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-expanded",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-posinset",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-setsize",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -11602,6 +10951,13 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -11616,6 +10972,13 @@
           "deprecated": true
         },
         {
+          "is": "state",
+          "name": "aria-expanded",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
           "is": "property",
           "name": "aria-flowto",
           "required": false,
@@ -11628,6 +10991,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-haspopup",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "state",
@@ -11680,6 +11050,13 @@
         },
         {
           "is": "property",
+          "name": "aria-posinset",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
           "required": false,
           "disallowed": false,
@@ -11688,6 +11065,13 @@
         {
           "is": "property",
           "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-setsize",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -11740,41 +11124,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-expanded",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-posinset",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-setsize",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -11838,6 +11187,13 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -11852,6 +11208,13 @@
           "deprecated": true
         },
         {
+          "is": "state",
+          "name": "aria-expanded",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
           "is": "property",
           "name": "aria-flowto",
           "required": false,
@@ -11864,6 +11227,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-haspopup",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "state",
@@ -11916,6 +11286,13 @@
         },
         {
           "is": "property",
+          "name": "aria-posinset",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
           "required": false,
           "disallowed": false,
@@ -11924,6 +11301,13 @@
         {
           "is": "property",
           "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-setsize",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -11978,27 +11362,6 @@
         },
         {
           "is": "property",
-          "name": "aria-valuemax",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-valuemin",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-valuetext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -12161,6 +11524,27 @@
         {
           "is": "property",
           "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuemax",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuemin",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuetext",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -12877,13 +12261,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -13331,34 +12708,6 @@
       "allProps": [
         {
           "is": "property",
-          "name": "aria-valuemax",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-valuemin",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-valuenow",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-valuetext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -13524,6 +12873,34 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuemax",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuemin",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuenow",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuetext",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
         }
       ],
       "category": "widget"
@@ -13606,13 +12983,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -13674,6 +13044,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -13866,21 +13243,7 @@
         },
         {
           "is": "property",
-          "name": "aria-orientation",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -13949,6 +13312,13 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
@@ -14007,6 +13377,13 @@
         {
           "is": "property",
           "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-orientation",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -15010,13 +14387,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -15078,6 +14448,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -15442,48 +14819,6 @@
         },
         {
           "is": "property",
-          "name": "aria-colindex",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-colindextext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-colspan",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowindex",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowindextext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowspan",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -15506,6 +14841,27 @@
         {
           "is": "state",
           "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colindex",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colindextext",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colspan",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -15638,7 +14994,21 @@
         },
         {
           "is": "property",
+          "name": "aria-readonly",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-required",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -15652,14 +15022,21 @@
         },
         {
           "is": "property",
-          "name": "aria-readonly",
+          "name": "aria-rowindex",
           "required": false,
           "disallowed": false,
           "deprecated": false
         },
         {
           "is": "property",
-          "name": "aria-required",
+          "name": "aria-rowindextext",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-rowspan",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -15782,13 +15159,6 @@
         },
         {
           "is": "property",
-          "name": "aria-valuetext",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -15944,6 +15314,13 @@
         {
           "is": "property",
           "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-valuetext",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -16183,70 +15560,14 @@
         },
         {
           "is": "property",
-          "name": "aria-autocomplete",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-multiline",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-placeholder",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-readonly",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-required",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-autocomplete",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -16308,11 +15629,25 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-errormessage",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -16329,11 +15664,25 @@
           "deprecated": false
         },
         {
+          "is": "property",
+          "name": "aria-haspopup",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "state",
           "name": "aria-hidden",
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-invalid",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -16365,6 +15714,13 @@
         },
         {
           "is": "property",
+          "name": "aria-multiline",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-owns",
           "required": false,
           "disallowed": false,
@@ -16372,7 +15728,28 @@
         },
         {
           "is": "property",
+          "name": "aria-placeholder",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-readonly",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-required",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -17222,195 +16599,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -18020,13 +17208,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -18088,6 +17269,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -18336,13 +17524,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -18404,6 +17585,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -19832,48 +19020,6 @@
         },
         {
           "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-expanded",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-readonly",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-required",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -19936,8 +19082,29 @@
           "deprecated": false
         },
         {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
           "is": "property",
           "name": "aria-dropeffect",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-errormessage",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "state",
+          "name": "aria-expanded",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -19969,6 +19136,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-invalid",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -20007,7 +19181,21 @@
         },
         {
           "is": "property",
+          "name": "aria-readonly",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-required",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -20595,13 +19783,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -20663,6 +19844,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -21354,13 +20542,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -21439,13 +20620,6 @@
         },
         {
           "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
           "name": "aria-flowto",
           "required": false,
           "disallowed": false,
@@ -21459,25 +20633,11 @@
           "deprecated": false
         },
         {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
           "is": "state",
           "name": "aria-hidden",
           "required": false,
           "disallowed": false,
           "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
         },
         {
           "is": "property",
@@ -22004,13 +21164,6 @@
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
           "is": "property",
           "name": "aria-atomic",
           "required": false,
@@ -22072,6 +21225,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -22487,350 +21647,147 @@
         },
         {
           "is": "property",
+          "name": "aria-activedescendant",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-atomic",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-braillelabel",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-brailleroledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-controls",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-current",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-describedby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-description",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-details",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "property",
+          "name": "aria-dropeffect",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-flowto",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-grabbed",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-haspopup",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
+        },
+        {
+          "is": "state",
+          "name": "aria-hidden",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-keyshortcuts",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-label",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-labelledby",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-live",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-orientation",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-owns",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-relevant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-atomic",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-braillelabel",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-brailleroledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-busy",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-controls",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-current",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-describedby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-description",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-details",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-dropeffect",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-errormessage",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-flowto",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-grabbed",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-haspopup",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "state",
-          "name": "aria-hidden",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-invalid",
-          "required": false,
-          "disallowed": false,
-          "deprecated": true
-        },
-        {
-          "is": "property",
-          "name": "aria-keyshortcuts",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-label",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-labelledby",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-live",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -22889,28 +21846,7 @@
       "allProps": [
         {
           "is": "property",
-          "name": "aria-multiselectable",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-readonly",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-activedescendant",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "state",
-          "name": "aria-disabled",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -22939,6 +21875,13 @@
         {
           "is": "state",
           "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-colcount",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -22977,6 +21920,13 @@
           "required": false,
           "disallowed": false,
           "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-disabled",
+          "required": false,
+          "disallowed": false,
+          "deprecated": true
         },
         {
           "is": "property",
@@ -23057,7 +22007,28 @@
         },
         {
           "is": "property",
+          "name": "aria-multiselectable",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-orientation",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-owns",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-readonly",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -23071,27 +22042,6 @@
         },
         {
           "is": "property",
-          "name": "aria-roledescription",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-colcount",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-rowcount",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-required",
           "required": false,
           "disallowed": false,
@@ -23099,7 +22049,14 @@
         },
         {
           "is": "property",
-          "name": "aria-orientation",
+          "name": "aria-roledescription",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
+          "name": "aria-rowcount",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -23185,20 +22142,6 @@
         },
         {
           "is": "property",
-          "name": "aria-posinset",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
-          "name": "aria-setsize",
-          "required": false,
-          "disallowed": false,
-          "deprecated": false
-        },
-        {
-          "is": "property",
           "name": "aria-atomic",
           "required": false,
           "disallowed": false,
@@ -23221,6 +22164,13 @@
         {
           "is": "state",
           "name": "aria-busy",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "state",
+          "name": "aria-checked",
           "required": false,
           "disallowed": false,
           "deprecated": false
@@ -23346,6 +22296,13 @@
         },
         {
           "is": "property",
+          "name": "aria-posinset",
+          "required": false,
+          "disallowed": false,
+          "deprecated": false
+        },
+        {
+          "is": "property",
           "name": "aria-relevant",
           "required": false,
           "disallowed": false,
@@ -23360,14 +22317,14 @@
         },
         {
           "is": "state",
-          "name": "aria-checked",
+          "name": "aria-selected",
           "required": false,
           "disallowed": false,
           "deprecated": false
         },
         {
-          "is": "state",
-          "name": "aria-selected",
+          "is": "property",
+          "name": "aria-setsize",
           "required": false,
           "disallowed": false,
           "deprecated": false
