@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3",
-    "generatedAt": "2026-07-05T00:43:17.320Z",
+    "generatedAt": "2026-07-12T02:38:07.605Z",
     "sourceUrl": "https://github.com/w3c/aria",
     "specUrl": "https://w3c.github.io/aria/"
   },
@@ -4224,7 +4224,7 @@
     },
     "definition": {
       "name": "definition",
-      "description": "A definition of a term or concept. See related term. Authors MUST identify the element being defined and assign that element a role of term. Authors SHOULD NOT use the definition role on interactive elements such as form controls because doing so could prevent users of assistive technologies from interacting with those elements.",
+      "description": "A definition of a term or concept. See related term. Authors MUST identify the element being defined and assign that element a role of term. The relationship between a term and its definition is conveyed on the term element; see the term role for more information.",
       "isAbstract": false,
       "superclassRoles": [
         "section"
@@ -18527,7 +18527,7 @@
     },
     "suggestion": {
       "name": "suggestion",
-      "description": "A single proposed change to content. For example, in an editing system that supports multiple users, one user can suggest a change, and another user would be responsible for accepting or rejecting the suggestion. Authors MUST ensure that a suggestion contains either one insertion child or one deletion child or ensure that it contains two children where one is an insertion and the other is a deletion. Authors MUST ensure a suggestion does not contain any other children. Authors MAY use aria-details or aria-description to associate the suggestion with related information such as comments, authoring info, and time stamps. <p> The best pet is a <span role=\"suggestion\"> <span role=\"deletion\">cat</span> <span role=\"insertion\">dog</span> </span> </p> When a suggestion is accepted, authors SHOULD remove the suggestion role, indicating that the proposed revision has been made. After the suggestion role is removed, child insertion and deletion elements can either be retained to document the revision or replaced with the revised content.",
+      "description": "A single proposed change to content. For example, in an editing system that supports multiple users, one user can suggest a change, and another user would be responsible for accepting or rejecting the suggestion. Authors MUST ensure that a suggestion has either exactly one insertion accessibility child or exactly one deletion accessibility child, or exactly two accessibility children where one is an insertion and the other is a deletion. Authors MUST NOT include any additional accessibility children in a suggestion. Authors MAY use aria-details or aria-description to associate the suggestion with related information such as comments, authoring info, and time stamps. <p> The best pet is a <span role=\"suggestion\"> <span role=\"deletion\">cat</span> <span role=\"insertion\">dog</span> </span> </p> When a suggestion is accepted, authors SHOULD remove the suggestion role, indicating that the proposed revision has been made. After the suggestion role is removed, child insertion and deletion elements can either be retained to document the revision or replaced with the revised content.",
       "isAbstract": false,
       "superclassRoles": [
         "section"
