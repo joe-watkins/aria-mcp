@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3",
-    "generatedAt": "2026-07-12T02:38:07.605Z",
+    "generatedAt": "2026-07-19T02:34:49.825Z",
     "sourceUrl": "https://github.com/w3c/aria",
     "specUrl": "https://w3c.github.io/aria/"
   },
@@ -23086,7 +23086,9 @@
       "defaultValue": "",
       "applicableRoles": [],
       "inheritedIntoRoles": [],
-      "relatedConcepts": [],
+      "relatedConcepts": [
+        "colspan"
+      ],
       "values": [],
       "isGlobal": false
     },
@@ -23440,7 +23442,9 @@
       "defaultValue": "",
       "applicableRoles": [],
       "inheritedIntoRoles": [],
-      "relatedConcepts": [],
+      "relatedConcepts": [
+        "rowspan"
+      ],
       "values": [],
       "isGlobal": false
     },
