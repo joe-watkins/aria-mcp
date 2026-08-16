@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.3",
-    "generatedAt": "2026-08-09T01:37:40.596Z",
+    "generatedAt": "2026-08-16T01:12:07.424Z",
     "sourceUrl": "https://github.com/w3c/aria",
     "specUrl": "https://w3c.github.io/aria/"
   },
@@ -15068,9 +15068,7 @@
       ],
       "supportedStates": [
         "aria-disabled",
-        "aria-orientation",
-        "aria-valuemax",
-        "aria-valuemin"
+        "aria-orientation"
       ],
       "inheritedStates": [],
       "prohibitedStates": [],
@@ -17076,9 +17074,7 @@
         "aria-haspopup",
         "aria-invalid",
         "aria-orientation",
-        "aria-readonly",
-        "aria-valuemax",
-        "aria-valuemin"
+        "aria-readonly"
       ],
       "inheritedStates": [],
       "prohibitedStates": [],
